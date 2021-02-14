@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Lucy & Dan</title>
-<style>
-  IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
-</style>
+<head>
+        <title>Lucy & Dan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
-<body style="margin: 0;padding: 0">
-<img src="Savethedate.jpg" class="displayed"><br>
-  <a href="mailto:lucydanuk@gmail.com">lucydanuk@gmail.com</a>
+<body>
+<div class="imgbox">
+    <img class="center-fit" src='Savethedate.jpg'>
+</div>
+    <a href="mailto:lucydanuk@gmail.com">lucydanuk@gmail.com</a>
 </body>
 </html>
