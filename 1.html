@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-        <title>Lucy & Dan</title>
-    <style>
+<html><head>
+        <title>Lucy &amp; Dan</title>
+    <style>section {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+      
 Body { margin: 0}
        img {
     width: 100%;
@@ -21,20 +25,26 @@ Text-align: center;
   background-image: url("wg.jpg");
 
   /* Set a specific height */
-  height: 500px;
+  width: 100vh; height: 100px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 </style>
-    </style>
+    
 </head>
 <body>
-        <div class="center">
-    <img class="center-fit" src='Savethedate.jpg'>
-        </div>
-</body>
-</html>
+    <section>
+   <div class="parallax">Text</div>
+   <img class="center-fit" src="pic.jpg">
+   <div class="parallax"></div>
+</section>
+    
+      
+        
+
+
+</body></html>
