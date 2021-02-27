@@ -8,8 +8,6 @@
                     max-width: 100vh;
                     margin-right: auto;
                     margin-left: auto;
-
-
             }      
             Body {
                     margin: 0
@@ -23,18 +21,24 @@
                     background-image: url("wg.jpg");
                     /* Set a specific height */
                     width: 100%;
-                    height: 100px;
+                    height: 50vw;
                     /* Create the parallax scrolling effect */
                     background-attachment: fixed;
                     background-repeat: no-repeat;
                     background-size: cover;
             }
+            .aspect {
+                    background-color: red;
+                    width: 100%;
+                    padding-top: 100%; /* 1:1 Aspect Ratio */
+                    position: relative; /* If you want text inside of it */
+            }
         </style>
 </head>
 <body>
         <section>
-                <div class="parallax">Text2<br><img src="std.png"></div>
+                <div class="aspect"><div class="parallax"><img src="std.png"></div></div>
                 <div><img src="pic.jpg"></div>
-                <div class="parallax"></div>
+                <div class="aspect"><div class="parallax"></div></div>
         </section>
 </body></html>
