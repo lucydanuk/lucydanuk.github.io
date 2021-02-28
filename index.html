@@ -63,13 +63,13 @@ a:hover, a:active {
 var countDownDate = new Date("May 28, 2022").getTime();
   var now = new Date().getTime();
   var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24)) + 1;
-  document.getElementById("dtogo").innerHTML = "🕒  " + days + " days!";
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  document.getElementById("demo").innerHTML = "🕒  " + days + " days!";
   if (days == 1) {
-    document.getElementById("dtogo").innerHTML = "🕒 tomorrow!";
+    document.getElementById("demo").innerHTML = "🕒 tomorrow!";
   }
   if (days < 1) {
-    document.getElementById("dtogo").innerHTML = "❤️ yay!";
+    document.getElementById("demo").innerHTML = "❤️ yay!";
   }
 </script>
 </head>
@@ -79,6 +79,6 @@ var countDownDate = new Date("May 28, 2022").getTime();
                 <div><img src="pic.jpg"></div>
                 <div class="parallaxb"><img src="Info.png">
                 <p>We are thrilled to ... we also want to make the background grass a little lighter I think, but let's wait until we have seen the printed copy.</p>
-                <p><a href="mailto:lucydanuk@gmail.com">✉️ lucydanuk@gmail.com</a><a href="https://goo.gl/maps/8MuQZVax9hZEcfZZ6">📍 map</a><a href="" id="dtogo"></a><a href="1.html">↩️ Old version</a></div>
+                <p><a href="mailto:lucydanuk@gmail.com">✉️ lucydanuk@gmail.com</a><a href="https://goo.gl/maps/8MuQZVax9hZEcfZZ6">📍 map</a><a href="" id="demo"></a><a href="1.html">↩️ Old version</a></div>
         </section>
 </body></html>
