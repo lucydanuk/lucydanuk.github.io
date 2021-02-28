@@ -64,7 +64,7 @@ a:hover, a:active {
 var countDownDate = new Date("May 28, 2022 0:0:0").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+// var x = setInterval(function() { won't update now 1 of 2
 
   // Get today's date and time
   var now = new Date().getTime();
@@ -88,7 +88,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "❤️ Yay!";
   }
-}, 1000);
+// }, 1000); won't update now 2 of 2
 </script>
 </head>
 <body>
