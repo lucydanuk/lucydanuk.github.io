@@ -59,6 +59,36 @@ a:hover, a:active {
   color: white;
 }
         </style>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 28, 2022 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+   // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Yay!";
+  }
+}, 1000);
+</script>
 </head>
 <body>
         <section>
@@ -66,6 +96,6 @@ a:hover, a:active {
                 <div><img src="pic.jpg"></div>
                 <div class="parallaxb"><img src="Info.png">
                 <p>We are thrilled to ... we also want to make the background grass a little lighter I think, but let's wait until we have seen the printed copy.</p>
-                <p><a href="mailto:lucydanuk@gmail.com">✉️ email</a><a href="https://goo.gl/maps/8MuQZVax9hZEcfZZ6">📍 map</a></div>
+                <p><a href="mailto:lucydanuk@gmail.com">✉️ email</a><a href="https://goo.gl/maps/8MuQZVax9hZEcfZZ6">📍 map</a><a href="" id="demo"></a></div><p id="demo"></p>
         </section>
 </body></html>
