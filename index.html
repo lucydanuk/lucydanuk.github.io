@@ -3,62 +3,37 @@
 <html><head>
         <title>Lucy &amp; Dan</title>
         <style>
-* {
-  text-align: center;
-font-family: Helvetica, Arial, Geneva, sans-serif;
-}
-            section {
+                * {
+                    text-align: center;
+                    font-family: Helvetica, Arial, Geneva, sans-serif;
+                }
+                body {
+                    margin: 0;
+                }
+                section {
                     display: grid;
-                    width: 100%;
-                    max-width: 100vh;
-                    margin-right: auto;
-                    margin-left: auto;
-            }      
-            Body {
-                    margin: 0
-            }
-            img {
-                    width: 100%;
-                    display: block;
-            }
-            .parallaxa {
-                    /* The image used */
+                    width: 100%; max-width: 100vh;
+                    margin-right: auto; margin-left: auto;
+                }      
+                img {
+                    width: 100%; display: block;
+                }
+                .parallaxa {
                     background-image: url("wga.png");
-                    width: 100%;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-            }
+                    width: 100%; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;
+                }
                 .parallaxb {
-                    /* The image used */
                     background-image: url("wgb.png");
-                    width: 100%;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-            }
-            .aspect {
-                    background-color: red;
-                    width: 100%;
-                    padding-top: 50%; /* 1:1 Aspect Ratio */
-                    position: relative; /* If you want text inside of it */
-            }
-            a:link, a:visited {
-  background-color: transparent;
-  color: black;
-  border: 1px solid grey;
-  padding: 10px 20px;
-  margin: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: green;
-  color: white;
-}
-        </style>
+                    width: 100%; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;
+                }
+                a:link, a:visited {
+		    background-color: transparent; color: black; border: 1px solid grey; padding: 10px 20px;
+		    margin: 5px; text-align: center; text-decoration: none; display: inline-block;
+		}
+		a:hover, a:active {
+		    background-color: green; color: white;
+		}
+	</style>
 </head>
 <body>
         <section>
@@ -68,19 +43,18 @@ a:hover, a:active {
                 <p>We are thrilled to ... we also want to make the background grass a little lighter I think, but let's wait until we have seen the printed copy.</p>
                 <p><a href="mailto:lucydanuk@gmail.com">✉️ lucydanuk@gmail.com</a><a href="https://goo.gl/maps/8MuQZVax9hZEcfZZ6">📍 map</a><a href="" id="demo"></a><a href="1.html">↩️ version</a></div>
         </section>
-        
-               <script>
-                        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
-var countDownDate = new Date("May 28, 2022").getTime();
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  document.getElementById("demo").innerHTML = "🕒  " + days + " days!";
-  if (days == 1) {
-    document.getElementById("demo").innerHTML = "🕒 tomorrow!";
-  }
-  if (days < 1) {
-    document.getElementById("demo").innerHTML = "❤️ yay!";
-  }
+	<script>
+		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+		var countDownDate = new Date("May 28, 2022").getTime();
+  		var now = new Date().getTime();
+  		var distance = countDownDate - now;
+ 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+ 		document.getElementById("demo").innerHTML = "🕒  " + days + " days!";
+  		if (days == 1) {
+			document.getElementById("demo").innerHTML = "🕒 tomorrow!";
+		}
+		if (days < 1) {
+			document.getElementById("demo").innerHTML = "❤️ yay!"
+		}
 </script>
 </body></html>
