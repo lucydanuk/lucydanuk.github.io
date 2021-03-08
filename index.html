@@ -41,7 +41,6 @@
                 <div><img src="pic.jpg"></div>
                 <div class="parallaxb"><img src="Info.png">
                 <p>Details to follow</p>
-<p><a title="Add to Calendar" class="addeventatc" data-id="gD6142818" href="https://www.addevent.com/event/gD6142818" target="_blank" rel="nofollow">Add to Calendar</a> <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script></p>
                 <p><a href="mailto:lucydanuk@gmail.com">✉️ lucydanuk@gmail.com</a><a href="https://goo.gl/maps/8MuQZVax9hZEcfZZ6">📍 map</a><a href="" id="demo"></a><a href="1.html">↩️ version</a></div>
         </section>
 	<script>
@@ -50,7 +49,7 @@
   		var now = new Date().getTime();
   		var distance = countDownDate - now;
  		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
- 		document.getElementById("demo").innerHTML = "🕒  " + days + " days!";
+ 		document.getElementById("demo").innerHTML = "🕒 <p><a title="Add to Calendar" class="addeventatc" data-id="gD6142818" href="https://www.addevent.com/event/gD6142818" target="_blank" rel="nofollow">Add to Calendar</a> <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script></p> " + days + " days!";
   		if (days == 1) {
 			document.getElementById("demo").innerHTML = "🕒 tomorrow!";
 		}
