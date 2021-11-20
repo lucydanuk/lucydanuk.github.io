@@ -97,7 +97,8 @@
 			<input type = "text" name = "RepTime" size = "20" />
 		</form>
 		<script>
-			document.myform.RepTime.value = (dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)) +"-"+(("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))+(("0"+dt.getMinutes()).slice(-2));
+			let now = new Date();
+			document.myform.RepTime.value = now;
 		</script>
 		<p>Write out email to be sent with to bcc subject 
 
