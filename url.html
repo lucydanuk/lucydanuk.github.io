@@ -95,7 +95,7 @@
       <form name = "myform">
          <input type = "text" name = "FlatNo" size = "20" />
 	 <input type = "text" name = "TimeNow" size = "20" />
-         <input type = "text" name = "stage" size = "20" />
+         <input type = "text" name = "TimeOf" size = "20" />
 	 <input type = "text" name = "stage" size = "20" />
 
       </form>
@@ -122,7 +122,8 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
 		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
   		var now = new Date().getTime();
  		document.getElementById("TimeNOW").innerHTML = now;
-		document.myform.FlatNo.value = now + " it is";
+		document.myform.TimeNOW.value = now + " it is";
+		document.myform.TimeOf.value = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
 </script>
    </body>
 </html>
