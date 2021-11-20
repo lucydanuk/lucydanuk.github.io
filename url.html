@@ -5,7 +5,6 @@
          <!--
             function FlatMap(name) {
               	document.myform.FlatNo.value = name
-		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
             }
          //-->
      	</script>
@@ -95,8 +94,13 @@
       <form name = "myform">
          <input type = "text" name = "FlatNo" size = "20" />
 	 <input type = "text" name = "TimeNow" size = "20" />
-         <input type = "text" name = "TimeOf" size = "20" />
-	 <input type = "text" name = "stage" size = "20" />
+	      	 <input type = "text" name = "TTTt" size = "20" />
+
+	<script>
+		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+		document.myform.TTTt.value = "tests"
+		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
+	</script>
       </form>
   
 
