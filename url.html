@@ -92,12 +92,37 @@
 			<area alt="275" title="275" href="javascript:void(0)" coords="1162,87,1177,99,1177,125,1257,96,1254,70,1242,59" shape="poly" OnClick="FlatMap('275')">
 			<area alt="276" title="276" href="javascript:void(0)" coords="1257,67,1260,92,1345,62,1348,36" shape="poly" OnClick="FlatMap('276')">
 		</map>
-		<form name = "myform">
+		<form name = "myform" action="mailto:test@test.commkj" method="get" enctype="text/plain">
 			<input type = "text" name = "FlatNo" size = "20" />
 			<input type = "text" name = "RepTime" size = "20" />
 			<input type = "text" name = "RepTime2" size = "20" />
 
 		</form>
+		
+				<form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+		      <div>
+			<label for="name">Name:
+			  <input type="text" name="name" id="name" />
+			</label>
+		      </div>
+		      <div>
+			<label for="email">Email:
+			  <input type="text" name="email" id="email" />
+			</label>
+		      </div>
+		      <div>
+			<label>Comments:</label>
+			<br />
+			<textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+		      </div>
+		      <div>
+			<input type="submit" name="submit" value="Send" />
+			<input type="reset" name="reset" value="Clear Form" />
+		      </div>
+		    </form>
+		
+		
+		
 		<script>
 			let dt = new Date();
 			document.myform.RepTime.value = dt;
