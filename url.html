@@ -1,13 +1,17 @@
 <html>   
    <head>
       <titleFlat Map</title>
-      <script type = "text/javascript">
+     	<script type = "text/javascript">
          <!--
             function FlatMap(name) {
                document.myform.FlatNo.value = name
             }
          //-->
-      </script>
+     	</script>
+	<script>
+		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
+	</script>
    </head>
       <h1>Flat Map</h1>
       <!-- Create  Mappings -->
@@ -109,18 +113,5 @@ https://stackoverflow.com/questions/28560465/date-variable-in-hyperlink-metarefr
 <a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
 <br>
 	<a href="mailto:email@example.com<span id="datetime"></span>?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
-  
-	<p><a id="TimeNOW"></a></p>
-  <script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-  </script>
-
-  	<script>
-		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
-  		var now = new Date().getTime();
- 		document.getElementById("TimeNOW").innerHTML = now;
-		document.myform.TimeNow.value = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-</script>
    </body>
 </html>
