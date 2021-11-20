@@ -10,11 +10,7 @@
          //-->
       </script>
    </head>
-   
-      <form name = "myform">
-         <input type = "text" name = "stage" size = "20" />
-      </form>
-      
+      <h1>Flat Map</h1>
       <!-- Create  Mappings -->
 <img src="FlatMap.jpg" usemap="#image-map">
 <map name="image-map">
@@ -95,5 +91,31 @@
 <area alt="275" title="275" href="javascript:void(0)" coords="1162,87,1177,99,1177,125,1257,96,1254,70,1242,59" shape="poly" OnClick="FlatMap('275')">
 <area alt="276" title="276" href="javascript:void(0)" coords="1257,67,1260,92,1345,62,1348,36" shape="poly" OnClick="FlatMap('276')">
 </map>
+      
+      <form name = "myform">
+         <input type = "text" name = "stage" size = "20" />
+      </form>
+   
+   
+<p>Date/Time: <span id="datetime"></span></p>
+Write out email to be sent with to bcc subject 
+
+Possibly even generate all and auto send
+<br>
+https://stackoverflow.com/questions/28560465/date-variable-in-hyperlink-metarefresh
+<Br>
+<a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
+<a href="mailto:email@example.com<span id="datetime"></span>?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
+  <p>.. <a id="demo"></a> ..</p>
+  <script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+  </script>
+
+  	<script>
+		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+  		var now = new Date().getTime();
+ 		document.getElementById("demo").innerHTML = "🕒  " + now;
+</script>
    </body>
 </html>
