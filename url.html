@@ -4,7 +4,8 @@
      	<script type = "text/javascript">
          <!--
             function FlatMap(name) {
-               document.myform.FlatNo.value = name
+              	document.myform.FlatNo.value = name
+		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
             }
          //-->
      	</script>
@@ -97,11 +98,7 @@
          <input type = "text" name = "TimeOf" size = "20" />
 	 <input type = "text" name = "stage" size = "20" />
       </form>
-   
-	<script>
-		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
-		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
-	</script>
+  
 
 	<p>Write out email to be sent with to bcc subject or possibly even generate all and auto send</p>
 	<br>
