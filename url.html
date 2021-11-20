@@ -123,6 +123,7 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
   		var now = new Date().getTime();
  		document.getElementById("TimeNOW").innerHTML = now;
 		document.myform.TimeNOW.value = now + " it is";
+		document.myform.Stage.value = now;
 		document.myform.TimeOf.value = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
 </script>
    </body>
