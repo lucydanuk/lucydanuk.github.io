@@ -5,7 +5,7 @@
       <script type = "text/javascript">
          <!--
             function FlatMap(name) {
-               document.myform.stage.value = name
+               document.myform.FlatNo.value = name
             }
          //-->
       </script>
@@ -93,7 +93,11 @@
 </map>
       
       <form name = "myform">
+         <input type = "text" name = "FlatNo" size = "20" />
+	 <input type = "text" name = "TimeNow" size = "20" />
          <input type = "text" name = "stage" size = "20" />
+	 <input type = "text" name = "stage" size = "20" />
+
       </form>
    
    
@@ -118,6 +122,7 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
 		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
   		var now = new Date().getTime();
  		document.getElementById("TimeNOW").innerHTML = now;
+		document.myform.FlatNo.value = now + " it is";
 </script>
    </body>
 </html>
