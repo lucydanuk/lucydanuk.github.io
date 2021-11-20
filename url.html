@@ -8,10 +8,6 @@
             }
          //-->
      	</script>
-	<script>
-		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
-		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
-	</script>
    </head>
       <h1>Flat Map</h1>
       <!-- Create  Mappings -->
@@ -102,16 +98,17 @@
 	 <input type = "text" name = "stage" size = "20" />
       </form>
    
-   
-<p>Date/Time: <span id="datetime"></span></p>
-Write out email to be sent with to bcc subject 
+	<script>
+		// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown
+		document.myform.TimeNow.value = ((dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)))+"-"+("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))(("0"+dt.getMinutes()).slice(-2));
+	</script>
 
-Possibly even generate all and auto send
-<br>
-https://stackoverflow.com/questions/28560465/date-variable-in-hyperlink-metarefresh<br>https://stackoverflow.com/questions/1201052/how-do-i-highlight-parts-of-an-imagemap-on-mouseover
-<Br>
-<a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
-<br>
+	Write out email to be sent with to bcc subject or possibly even generate all and auto send
+	<br>
+	https://stackoverflow.com/questions/28560465/date-variable-in-hyperlink-metarefresh<br>https://stackoverflow.com/questions/1201052/how-do-i-highlight-parts-of-an-imagemap-on-mouseover
+	<Br>
+	<a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
+	<br>
 	<a href="mailto:email@example.com<span id="datetime"></span>?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
    </body>
 </html>
