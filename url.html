@@ -95,10 +95,12 @@
 		<form name = "myform">
 			<input type = "text" name = "FlatNo" size = "20" />
 			<input type = "text" name = "RepTime" size = "20" />
+			<input type = "text" name = "RepTime2" size = "20" />
+
 		</form>
 		<script>
-			let now = new Date();
-			document.myform.RepTime.value = now;
+			let dt = new Date();
+			document.myform.RepTime.value = dt;
 		</script>
 		<p>Write out email to be sent with to bcc subject 
 
