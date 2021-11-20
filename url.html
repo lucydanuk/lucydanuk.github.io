@@ -101,6 +101,8 @@
 		<script>
 			let dt = new Date();
 			document.myform.RepTime.value = dt;
+			document.myform.RepTime2.value = (dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)) +"-"+(("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))+(("0"+dt.getMinutes()).slice(-2))
+
 		</script>
 		<p>Write out email to be sent with to bcc subject 
 
