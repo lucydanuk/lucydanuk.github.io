@@ -6,6 +6,7 @@
 			function FlatMap(name) {
 			document.myform.FlatNo.value = name;
 			document.getElementById("demo").innerHTML = document.myform.FlatNo.value;
+			document.getElementById("demo").setAttribute('href', "https://bbc.co.uk" + document.myform.FlatNo.value)
 			}
 			//-->
       		</script>
