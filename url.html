@@ -10,11 +10,23 @@
 			}
 			//-->
       		</script>
+		
+		<style>
+    h1 {
+        color: Green;
+    }
+     
+    div.scroll {
+        width: 1370px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    </style>
    	</head>
 	<body>
 		<h1>Flat Map 321</h1>
 		<!-- Create  Mappings -->
-		<img src="FlatMap.jpg" usemap="#image-map">
+		<div class="scroll"><img src="FlatMap.jpg" usemap="#image-map"></div>
 		<map name="image-map">
 			<area alt="201" title="201" href="javascript:void(0)" coords="49,556,136,526,134,506,49,536" shape="poly" OnClick="FlatMap('201')">
 			<area alt="202" title="202" href="javascript:void(0)" coords="153,498,154,519,223,497,223,473" shape="poly" OnClick="FlatMap('202')">
