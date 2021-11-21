@@ -1,14 +1,14 @@
 <html>   
  	<head>
-      		<titleFlat Map</title>
+      		<title>Flat Map1</title>
       		<script type = "text/javascript">
 			<!--
 			function FlatMap(name) {
 			document.myform.FlatNo.value = name;
+			document.getElementById("demo").innerHTML = document.myform.FlatNo.value;
 			}
 			//-->
       		</script>
-
    	</head>
 	<body>
 		<h1>Flat Map 321</h1>
@@ -94,13 +94,12 @@
 		</map>
 		<form name = "myform" action="mailto:test@test.commkj" method="get" enctype="text/plain">
 			<input type = "text" name = "FlatNo" size = "3" />
-			<input type = "text" name = "RepTime" size = "25" />
+			<input type = "text" name = "RepTime" size = "30" />
 			<input type = "text" name = "RepTime2" size = "25" />
-
 		</form>
 		
-		
-		
+		<a href="" id="demo"></a>
+	
 		<script>
 			let dt = new Date();
 			document.myform.RepTime.value = dt;
