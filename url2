@@ -1,0 +1,57 @@
+<html>   
+ 	<head>
+      		<title>Flat Map1</title>
+      		<script type = "text/javascript">
+			<!--
+			function FlatMap(name) {
+			document.myform.FlatNo.value = name;
+			document.getElementById("demo").innerHTML = document.myform.FlatNo.value;
+			document.getElementById("demo").setAttribute('href', "https://bbc.co.uk" + document.myform.FlatNo.value)
+			}
+			//-->
+      		</script>
+		
+   	</head>
+	<body>
+		<h1>Flat Map 321</h1>
+		<!-- Create  Mappings https://www.image-map.net/ -->
+		<img src="Screen Shot 2022-05-14 at 23.39.00.png" usemap="#image-map">
+	<map name="image-map">
+    <area target="" alt="Flat 2" title="Flat 2" href="javascript:void(0)" coords="116,478,113,449,213,407,350,391,350,425,213,451" shape="poly" OnClick="FlatMap('Kings House 2')">
+    <area target="" alt="Flat 3" title="Flat 3" href="javascript:void(0)" coords="401,380,401,344,522,297,525,235,554,225,552,266,528,285,519,335" shape="poly" OnClick="FlatMap('Kings House 3')">
+    <area target="" alt="Flat 4" title="Flat 4" href="javascript:void(0)" coords="114,448,114,409,212,368,347,354,349,390,215,405" shape="poly" OnClick="FlatMap('Kings House 4')">
+    <area target="" alt="Flat 5" title="Flat 5" href="javascript:void(0)" coords="400,290,403,337,520,292,522,237,555,224,557,176,523,187,517,249,493,259" shape="poly" OnClick="FlatMap('Kings House 5')">
+    <area target="" alt="Flat 6" title="Flat 6" href="javascript:void(0)" coords="118,362,115,404,213,367,348,354,346,309,216,322,177,336" shape="poly" OnClick="FlatMap('Kings House 6')">
+    <area target="" alt="Flat 8" title="Flat 8" href="javascript:void(0)" coords="571,242,622,281,776,214,778,247,622,312,570,276" shape="poly" OnClick="FlatMap('Kings House 8')">
+    <area target="" alt="Flat 9" title="Flat 9" href="javascript:void(0)" coords="691,225,691,250,778,210,777,183" shape="poly" OnClick="FlatMap('Kings House 9')">
+    <area target="" alt="Flat 10" title="Flat 10" href="javascript:void(0)" coords="562,182,561,201,620,252,777,178,776,155,621,224" shape="poly" OnClick="FlatMap('Kings House 10')">
+    <area target="" alt="Flat 11" title="Flat 11" href="javascript:void(0)" coords="560,142,561,175,621,222,776,154,775,125,621,197" shape="poly" OnClick="FlatMap('Kings House 11')">
+    <area target="" alt="Flat 12" title="Flat 12" href="javascript:void(0)" coords="621,190,776,114,716,48,559,126" shape="poly" OnClick="FlatMap('Kings House 12')">
+  </map>
+    
+		<form name = "myform" action="mailto:test@test.commkj" method="get" enctype="text/plain">
+			<input type = "text" name = "FlatNo" size = "3" />
+			<input type = "text" name = "RepTime" size = "30" />
+			<input type = "text" name = "RepTime2" size = "25" />
+		</form>
+		
+		<a href="" id="demo"></a>
+	
+		<script>
+			let dt = new Date();
+			document.myform.RepTime.value = dt;
+			document.myform.RepTime2.value = (dt.getFullYear())+"-"+(("0"+(dt.getMonth()+1)).slice(-2)) +"-"+(("0"+dt.getDate()).slice(-2))+"_"+(("0"+dt.getHours()).slice(-2))+(("0"+dt.getMinutes()).slice(-2))
+		</script>
+		<p>Write out email to be sent with to bcc subject 
+
+		Possibly even generate all and auto send
+		<br>
+		https://stackoverflow.com/questions/28560465/date-variable-in-hyperlink-metarefresh<br>https://stackoverflow.com/questions/1201052/how-do-i-highlight-parts-of-an-imagemap-on-mouseover
+		<Br>
+		<a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
+		<br>
+		<a href="mailto:email@example.com<span id="datetime"></span>?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Some body text here">Send Email</a>
+			</p>
+			For everyone that I ask to use the form, send them a URL with varaibles in (?from=11HK&name=joe) so that it's quick to complete. They only have to click the house then press send. Could have auto text based on what they say the problem is.
+		</body>
+</html>
